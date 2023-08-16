@@ -1,6 +1,6 @@
 body{
-  background-image: url('./toronto.jpg');
-  
+  background-image: url('./Login-img.jpg');
+  background-position: left 55% ;
 }
 .sign-in, .sign-in-form {
     margin-top: 5%;
@@ -15,27 +15,34 @@ body{
     transform: translate(-50% , -50%)
   }
   .sign-in{
-    border: 4px solid #322653;
+    min-width: 25%;
+    border: 100px solid #99627A;
+    border-radius: 20px;
     padding: 2% 0 2% 0;
-    width: 30%;    
+    width: auto;
+    background: rgba(47, 47, 47, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(47, 47, 47, 0.3);    
   }
 
   .letter{
     font-family:  'Open Sans', sans-serif;
     color: white;
-    font-size: x-large;
-    background-color: #322653;
+    font-size: xx-large;
   }
   .input-form {
     background: none;
-    background-color: white;
-    font-size: 18px;
+    background-color: #99627A;
+    color: white;
+    font-size: 20px;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
     border: none;
-    border-radius: 0;
-    border: 1px solid #322653;
+    border-radius: 40px;
+    border: 1px solid #99627A;
     margin: 25px 0;
   }
   
@@ -44,7 +51,7 @@ body{
   }
   
   .btn-form {
-    min-width: 165px;
+    min-width: 210px;
     width: auto;
     height: 50px;
     border-radius: 5px;
@@ -52,7 +59,7 @@ body{
     line-height: 50px;
     padding: 0 35px 0 35px;
     font-size: 15px;
-    background-color: #322653;
+    background-color: #643843;
     color: white;
     font-weight: bolder;
     border: none;

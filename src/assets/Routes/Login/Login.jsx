@@ -1,4 +1,3 @@
-import React from 'react'
 import { useForm } from 'react-hook-form'
 import './Login.css'
 export const Login = () => {
@@ -12,12 +11,12 @@ export const Login = () => {
   return (
     <>
      <section className='sign-in center'>
-      <span className='letter'>Iniciar Sesion</span>
+      <span className='letter'>Bienvenido</span>
       <form className='sign-in-form' onSubmit={handleSubmit(onSubmit)}>
         <input
-          className='input-form letter'
+          className='input-form '
           type="text"
-          placeholder='Nombre de usuario'
+          placeholder='Usuario'
           {...register('username', {
               required : 'Ingrese su nombre de usuario'
             }
@@ -25,7 +24,7 @@ export const Login = () => {
         } />
         <p>{errors.username?.message}</p>
         <input
-          className='input-form letter'
+          className='letter input-form '
           type='password'
           placeholder='Contraseña'
           {...register(
@@ -37,9 +36,10 @@ export const Login = () => {
           }
         />
         <p>{errors.password?.message}</p>
-         <button className='btn-form' type='submit'>Iniciar Sesión</button>
+        <button className='btn-form' type='submit'>Iniciar Sesión</button>
       </form>
     </section>
+      
     </>
   )
 }
